@@ -44,11 +44,7 @@ function strict() {
 // const user = "Ivan";
 // alert(`Привет, ${user}`);
 
-<<<<<<< HEAD
-//                      ОПЕРАТОРЫ
-=======
-//...............................ОПЕРАТОРЫ
->>>>>>> 7427a297070d0b93ffb7bc2030d1b6685d30a169
+
 // let incr = 10,
 //     decr = 10;
 
@@ -87,8 +83,7 @@ function strict() {
 // != не равен по значению
 // !== не равен по типу данных, если да, то возвращает тру 
 
-<<<<<<< HEAD
-=======
+
 // .......ПЕРВОЕ ДОМАШНЕЕ ЗАДАНИЕ, ОПРОС ПО ФИЛЬМАМ
 
 // const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");
@@ -174,61 +169,86 @@ function strict() {
 // }
 
 // ВТОРОЕ ДОМАШНЕЕ ЗАДАНИЕ С ЦИКЛАМИ И УСЛОВИЯМИ
->>>>>>> 7427a297070d0b93ffb7bc2030d1b6685d30a169
-
-const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");
-
-const personalMovieDB = {
-count: numberOfFilms,
-movies: {},
-actours: {},
-genres: [],
-privat: false
-
-};
-<<<<<<< HEAD
-const lastFilm = prompt("Какой последний фильм Вы смотрели?", ""), 
-      lastFilmRate = prompt("На сколько оцените его?", ""),
-      lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""), 
-      lastFilmRate1 = prompt("На сколько оцените его?", "");
-
-personalMovieDB.movies[lastFilm] = lastFilmRate;
-personalMovieDB.movies[lastFilm1] = lastFilmRate1;
 
 
-console.log(personalMovieDB);
+// const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");
+
+// const personalMovieDB = {
+// count: numberOfFilms,
+// movies: {},
+// actours: {},
+// genres: [],
+// privat: false
+
+// };
+
+// const lastFilm = prompt("Какой последний фильм Вы смотрели?", ""), 
+//       lastFilmRate = prompt("На сколько оцените его?", ""),
+//       lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""), 
+//       lastFilmRate1 = prompt("На сколько оцените его?", "");
+
+// personalMovieDB.movies[lastFilm] = lastFilmRate;
+// personalMovieDB.movies[lastFilm1] = lastFilmRate1;
 
 
+// console.log(personalMovieDB);
 
 
 
-=======
-let lastFilm; 
-let lastFilmRate;
+
+
+
+var lastFilm; 
+var lastFilmRate;
 let lastFilm1;
 let lastFilmRate1;
 
-for (let i = 1; i < 3; i++) {
+for (let i = 1; i < 4; i++) {
   if (i === 1) {
     lastFilm = prompt("Какой последний фильм Вы смотрели?", ""); 
-    if (lastFilm.length === null || lastFilm.length >= 50) {
-      lastFilm = prompt("Какой последний фильм Вы смотрели?", "");
-    }
-    lastFilmRate = prompt("На сколько оцените его?", "");
   
-       if (lastFilmRate.length === null || lastFilmRate.length >= 50) {
-        i--;
-  }
-}
-     
-  if (i === 2) {
-    lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""); 
-    lastFilmRate1 = prompt("На сколько оцените его?", "");
-    if (lastFilm1.length == 0 || lastFilm1.length >= 50 || 
-      lastFilmRate1.length == 0 || lastFilmRate1.length >= 50) {
-        i--;
-      }
+} else if (+lastFilm.length === 0 || lastFilm.length >= 50) {
+  
+    lastFilm = prompt("Какой последний фильм Вы смотрели?", "");
+    i--;
 } 
-
+if (i === 2) {
+    lastFilmRate = prompt("На сколько оцените его?", ""); 
+  
+} else if (+lastFilmRate.length === 0 || lastFilmRate.length >= 50) {
+  
+    lastFilm = prompt("Какой последний фильм Вы смотрели?", "");
+    i--;
+} else {
+      i++;
+ 
+}   
+console.log(lastFilm);
+console.log(lastFilmRate);
 }
->>>>>>> 7427a297070d0b93ffb7bc2030d1b6685d30a169
+  
+
+
+
+// if (i === 1) {
+//       lastFilm = prompt("Какой последний фильм Вы смотрели?", ""); 
+//       }
+//         else if (lastFilm.length == 0 || lastFilm.length >= 50) {
+//         i--;  
+//       } else {
+//       lastFilmRate = prompt("На сколько оцените его?", "");
+//       }
+//          if (lastFilmRate.length === null || lastFilmRate.length >= 50) {
+//           i--;
+//     } 
+//   if (i === 2) {
+//     lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""); 
+//     lastFilmRate1 = prompt("На сколько оцените его?", "");
+//     if (lastFilm1.length == 0 || lastFilm1.length >= 50 || 
+//       lastFilmRate1.length == 0 || lastFilmRate1.length >= 50) {
+//         i--;
+//       }
+// } 
+
+// }
+
