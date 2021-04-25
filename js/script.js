@@ -44,7 +44,11 @@ function strict() {
 // const user = "Ivan";
 // alert(`Привет, ${user}`);
 
+<<<<<<< HEAD
 //                      ОПЕРАТОРЫ
+=======
+//...............................ОПЕРАТОРЫ
+>>>>>>> 7427a297070d0b93ffb7bc2030d1b6685d30a169
 // let incr = 10,
 //     decr = 10;
 
@@ -83,6 +87,94 @@ function strict() {
 // != не равен по значению
 // !== не равен по типу данных, если да, то возвращает тру 
 
+<<<<<<< HEAD
+=======
+// .......ПЕРВОЕ ДОМАШНЕЕ ЗАДАНИЕ, ОПРОС ПО ФИЛЬМАМ
+
+// const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");
+
+// const personalMovieDB = {
+// count: numberOfFilms,
+// movies: {},
+// actours: {},
+// genres: [],
+// privat: false
+
+// };
+// const lastFilm = prompt("Какой последний фильм Вы смотрели?", ""), 
+//       lastFilmRate = prompt("На сколько оцените его?", ""),
+//       lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""), 
+//       lastFilmRate1 = prompt("На сколько оцените его?", "");
+
+// personalMovieDB.movies[lastFilm] = lastFilmRate;
+// personalMovieDB.movies[lastFilm1] = lastFilmRate1;
+
+// console.log(personalMovieDB);
+
+// ..............................УСЛОВИЯ
+// IF
+// if (4 == 9) {
+//       console.log('ok!');
+// } else {
+//       console.log('error');
+// }
+
+// const num = 50;
+
+// if (num < 49) {
+//       console.log('error');
+// } else if (num > 100) {
+//       console.log('too much!');
+// } else {
+//       console.log('ok');
+// }
+
+//............. Тринарный оператор (содержат 3 элемента)
+// (num === 50) ? console.log('right') : console.log('wrong'); 
+
+// ..............SWITCH (ПРОВЕРКА НА СТРОГОЕ СООТВЕТСТВИЕ)
+// const num = 50;
+// switch (num) {
+//       case 49:
+//             console.log('wrong');
+//             break;
+//       case 100:
+//             console.log('wrong');
+//             break;
+//       case 50:
+//             console.log('right');
+//             break;
+//       default:
+//             console.log('not this time');
+//             break;
+// }
+
+// .........................ЦИКЛЫ
+
+// ...........WHILE
+//let num = 50;
+// while (num <= 55) {
+//       console.log(num);
+//       num++;
+// }
+
+//............DO
+// do {
+//       console.log(num);
+//       num++;
+// } while (num <=55);
+
+//............FOR
+// for (let i = 1; i < 8; i++) {
+//      if (i===6) {
+//        //    break;
+//        continue;
+//      }  
+//      console.log(i);  
+// }
+
+// ВТОРОЕ ДОМАШНЕЕ ЗАДАНИЕ С ЦИКЛАМИ И УСЛОВИЯМИ
+>>>>>>> 7427a297070d0b93ffb7bc2030d1b6685d30a169
 
 const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");
 
@@ -94,6 +186,7 @@ genres: [],
 privat: false
 
 };
+<<<<<<< HEAD
 const lastFilm = prompt("Какой последний фильм Вы смотрели?", ""), 
       lastFilmRate = prompt("На сколько оцените его?", ""),
       lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""), 
@@ -109,3 +202,33 @@ console.log(personalMovieDB);
 
 
 
+=======
+let lastFilm; 
+let lastFilmRate;
+let lastFilm1;
+let lastFilmRate1;
+
+for (let i = 1; i < 3; i++) {
+  if (i === 1) {
+    lastFilm = prompt("Какой последний фильм Вы смотрели?", ""); 
+    if (lastFilm.length === null || lastFilm.length >= 50) {
+      lastFilm = prompt("Какой последний фильм Вы смотрели?", "");
+    }
+    lastFilmRate = prompt("На сколько оцените его?", "");
+  
+       if (lastFilmRate.length === null || lastFilmRate.length >= 50) {
+        i--;
+  }
+}
+     
+  if (i === 2) {
+    lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""); 
+    lastFilmRate1 = prompt("На сколько оцените его?", "");
+    if (lastFilm1.length == 0 || lastFilm1.length >= 50 || 
+      lastFilmRate1.length == 0 || lastFilmRate1.length >= 50) {
+        i--;
+      }
+} 
+
+}
+>>>>>>> 7427a297070d0b93ffb7bc2030d1b6685d30a169
