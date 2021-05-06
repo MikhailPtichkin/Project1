@@ -171,84 +171,62 @@ function strict() {
 // ВТОРОЕ ДОМАШНЕЕ ЗАДАНИЕ С ЦИКЛАМИ И УСЛОВИЯМИ
 
 
-// const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");
+const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");
 
-// const personalMovieDB = {
-// count: numberOfFilms,
-// movies: {},
-// actours: {},
-// genres: [],
-// privat: false
+const personalMovieDB = {
+count: numberOfFilms,
+movies: {},
+actours: {},
+genres: [],
+privat: false
 
-// };
+};
 
-// const lastFilm = prompt("Какой последний фильм Вы смотрели?", ""), 
-//       lastFilmRate = prompt("На сколько оцените его?", ""),
-//       lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""), 
-//       lastFilmRate1 = prompt("На сколько оцените его?", "");
+var a;
+var b;
 
-// personalMovieDB.movies[lastFilm] = lastFilmRate;
-// personalMovieDB.movies[lastFilm1] = lastFilmRate1;
+for (let i = 0; i < 2; i++) {
+    
+    do {
+    a = prompt ("какой последний фильм вы смотрели?", "");
+    } while (a == null || a.length < 1 || a.length > 50);
+    
+   
+    
+    do {
+    b = prompt ("на сколько вы оцените его?", "");
+    } while (b == null || b.length < 1 || b.length > 50);
+    
+    personalMovieDB.movies[a] = b;
+    }
 
+if (+personalMovieDB.count < 10) {
+    console.log("Просмотрено довольно мало фильмов");
 
-// console.log(personalMovieDB);
+} else if (+personalMovieDB.count <=30) {
+    console.log("Вы классический зритель");
 
+} else if (+personalMovieDB.count > 30) {
+    console.log("Вы киноман");
 
-
-
-
-
-var lastFilm; 
-var lastFilmRate;
-let lastFilm1;
-let lastFilmRate1;
-
-for (let i = 1; i < 4; i++) {
-  if (i === 1) {
-    lastFilm = prompt("Какой последний фильм Вы смотрели?", ""); 
-  
-} else if (+lastFilm.length === 0 || lastFilm.length >= 50) {
-  
-    lastFilm = prompt("Какой последний фильм Вы смотрели?", "");
-    i--;
-} 
-if (i === 2) {
-    lastFilmRate = prompt("На сколько оцените его?", ""); 
-  
-} else if (+lastFilmRate.length === 0 || lastFilmRate.length >= 50) {
-  
-    lastFilm = prompt("Какой последний фильм Вы смотрели?", "");
-    i--;
 } else {
-      i++;
- 
-}   
-console.log(lastFilm);
-console.log(lastFilmRate);
+    console.log("Произошла ошибка");
 }
-  
+
+console.log(personalMovieDB);
 
 
 
-// if (i === 1) {
-//       lastFilm = prompt("Какой последний фильм Вы смотрели?", ""); 
-//       }
-//         else if (lastFilm.length == 0 || lastFilm.length >= 50) {
-//         i--;  
-//       } else {
-//       lastFilmRate = prompt("На сколько оцените его?", "");
-//       }
-//          if (lastFilmRate.length === null || lastFilmRate.length >= 50) {
-//           i--;
-//     } 
-//   if (i === 2) {
-//     lastFilm1 = prompt("Какой последний фильм Вы смотрели?", ""); 
-//     lastFilmRate1 = prompt("На сколько оцените его?", "");
-//     if (lastFilm1.length == 0 || lastFilm1.length >= 50 || 
-//       lastFilmRate1.length == 0 || lastFilmRate1.length >= 50) {
-//         i--;
-//       }
-// } 
 
-// }
+
+
+
+
+
+
+
+
+
+
+
 
