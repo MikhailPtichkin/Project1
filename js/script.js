@@ -171,7 +171,18 @@ function strict() {
 // ВТОРОЕ ДОМАШНЕЕ ЗАДАНИЕ С ЦИКЛАМИ И УСЛОВИЯМИ
 
 
-const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", "");  
+
+    while (numberOfFilms == null || numberOfFilms == "" || isNaN(numberOfFilms)) {
+    numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", ""); 
+ 
+    }
+}
+
+start();
 
 const personalMovieDB = {
 count: numberOfFilms,
@@ -181,6 +192,8 @@ genres: [],
 privat: false
 
 };
+
+
 
 var a;
 var b;
@@ -203,7 +216,7 @@ for (let i = 0; i < 2; i++) {
 if (+personalMovieDB.count < 10) {
     console.log("Просмотрено довольно мало фильмов");
 
-} else if (+personalMovieDB.count <=30) {
+} else if (+personalMovieDB.count >=10 && personalMovieDB <= 30) {
     console.log("Вы классический зритель");
 
 } else if (+personalMovieDB.count > 30) {
